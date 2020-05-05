@@ -38,11 +38,6 @@ Module ModulePrincipal
         Console.WriteLine(" [9] - Encontrar el digito mayor de ND dígitos")
         Console.WriteLine(" [10] - Encontrar la frecuencia de DIG de a nd dígitos de un NE")
         Console.WriteLine("------------------------------------------------------------------------------------------------")
-
-
-
-
-
         Console.WriteLine("")
 
         Dim opcion As String
@@ -50,9 +45,18 @@ Module ModulePrincipal
         opcion = Console.ReadLine()
         Console.ResetColor()
 
+
+        Dim instacia As Object
+        instacia = New NEnteros()
+
         Select Case opcion
             Case "1"
+                Dim n, m, p As Integer
                 Console.WriteLine("acceso 1")
+                n = Console.ReadLine()
+                m = instacia.cargar(n)
+                p = instacia.descargar(m)
+                Console.WriteLine(p)
             Case "2"
                 Console.WriteLine("acceso 2")
             Case "3"
@@ -72,7 +76,7 @@ Module ModulePrincipal
             Case "10"
                 Console.WriteLine("acceso 10")
             Case Else
-                Console.WriteLine("acceso fail")
+                Console.WriteLine("POR FAVOR ELIJA LA OPCION CORRECTA!!")
 
         End Select
         Console.ReadLine()
