@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{D6901B48-AA35-4FEA-A81E-AFCBD80A0075}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>ConsolePNEnteros1Parte.Module1</StartupObject>
+    <StartupObject>ConsolePNEnteros1Parte.ModulePrincipal</StartupObject>
     <RootNamespace>ConsolePNEnteros1Parte</RootNamespace>
     <AssemblyName>ConsolePNEnteros1Parte</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -69,7 +69,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Module1.vb" />
+    <Compile Include="ModulePrincipal.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
