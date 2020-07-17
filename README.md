@@ -8,10 +8,6 @@ U.A.G.R.M. | Materia: Programacion I | Docente: Albero Mollo | Repositorio: Prac
 Docente Ing. Mollo
 14/04/2020
 
-# Imagen - Template
-![repository-open-graph-template UAGRM](https://user-images.githubusercontent.com/36086876/87741555-cca9af00-c7b2-11ea-9f7c-09e909aeef47.png)
-
-
 # Imagen - Formulario Consola
 ![principal](https://user-images.githubusercontent.com/36086876/87741212-f0b8c080-c7b1-11ea-858b-ddfacc859841.png)
 
@@ -62,3 +58,6 @@ Ejemplo N=335733 y nd=2 y DIG 33 => r=2
 
 #Recomendación:
  Debe usted realizar y probar todas las operaciones en el lenguaje de programación por que el examen es en MAQUINA.
+
+# Imagen - Template
+![repository-open-graph-template UAGRM](https://user-images.githubusercontent.com/36086876/87741555-cca9af00-c7b2-11ea-9f7c-09e909aeef47.png)
