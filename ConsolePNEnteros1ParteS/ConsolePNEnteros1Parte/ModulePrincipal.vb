@@ -1,5 +1,7 @@
 ﻿
 Module ModulePrincipal
+    Dim instacia As NEnteros = New NEnteros
+
 
     Sub Main()
 
@@ -41,44 +43,147 @@ Module ModulePrincipal
         Console.WriteLine("")
 
         Dim opcion As String
-        Console.Write(" INGRESE LA OPCION: ")
+        Console.Write("INGRESE LA OPCION: ")
         opcion = Console.ReadLine()
         Console.ResetColor()
+        Console.WriteLine("")
 
-
-        Dim instacia As Object
-        instacia = New NEnteros()
+        Dim n, nd, entero, dig, bp, vi, r As Integer
+        Dim s As String
 
         Select Case opcion
             Case "1"
-                Dim n, m, p As Integer
+                Dim m, p As Integer
+                Dim b As Boolean
                 Console.WriteLine("acceso 1")
-                n = Console.ReadLine()
-                m = instacia.cargar(n)
-                p = instacia.descargar(m)
-                Console.WriteLine(p)
+                Console.ForegroundColor = ConsoleColor.Yellow
+                Console.Write("INGRESE EL VALOR: ")
+
+                Console.Write("")
+                n = Console.Readline()
+                instacia.cargar(n)
+                Console.WriteLine("")
+                Console.ForegroundColor = ConsoleColor.White
+                Console.WriteLine("---------------------------------------------------")
+                Console.ForegroundColor = ConsoleColor.Magenta
+                If (b = instacia.ejercicio1() = True) Then
+                    Console.WriteLine("RESULTADO ES: -> TRUE")
+                Else
+                    Console.WriteLine("RESULTADO ES: -> FALSE")
+                End If
             Case "2"
                 Console.WriteLine("acceso 2")
+                Console.Write("INGRESE EL VALOR N: ")
+                n = Console.ReadLine()
+                instacia.cargar(n)
+                Console.Write("INGRESE EL VALOR VI: ")
+                vi = CInt(Console.ReadLine())
+                Console.Write("INGRESE EL VALOR R: ")
+                r = CInt(Console.ReadLine())
+                Console.WriteLine("")
+                Console.ForegroundColor = ConsoleColor.Magenta
+                If (instacia.ejercicio2(vi, r) = True) Then
+                    Console.WriteLine("RESULTADO ES: -> TRUE")
+                Else
+                    Console.WriteLine("RESULTADO ES: -> FALSE")
+                End If
             Case "3"
                 Console.WriteLine("acceso 3")
+                Console.Write("INGRESE EL VALOR N: ")
+                n = CInt(Console.ReadLine())
+                instacia.cargar(n)
+                Console.Write("INGRESE EL VALOR ND: ")
+                nd = CInt(Console.ReadLine())
+                s = instacia.ejercicio3(nd)
+                Console.WriteLine("")
+                Console.WriteLine("RESULTADO: -> " + s)
             Case "4"
                 Console.WriteLine("acceso 4")
+                s = " "
+                Console.Write("INGRESE EL VALOR N: ")
+                n = CInt(Console.ReadLine())
+                instacia.cargar(n)
+                Console.Write("INGRESE EL VALOR ND: ")
+                nd = CInt(Console.ReadLine())
+                s = instacia.ejercicio4(nd)
+                Console.WriteLine("")
+                Console.WriteLine("RESULTADO: -> " + s)
             Case "5"
                 Console.WriteLine("acceso 5")
+                s = " "
+                Console.Write("INGRESE EL VALOR N: ")
+                n = CInt(Console.ReadLine())
+                instacia.cargar(n)
+                Console.Write("INGRESE EL VALOR ND: ")
+                nd = CInt(Console.ReadLine())
+                s = instacia.ejercicio5(nd)
+                Console.WriteLine("")
+                Console.WriteLine("RESULTADO: -> " + s)
             Case "6"
                 Console.WriteLine("acceso 6")
+                n = Console.ReadLine()
+                instacia.cargar(n)
+                s = instacia.ejercicio6()
+                Console.WriteLine("")
+                Console.WriteLine("RESULTADO: -> " + s)
             Case "7"
                 Console.WriteLine("acceso 7")
+                Console.Write("INGRESE EL VALOR N: ")
+                n = Console.ReadLine()
+                instacia.cargar(n)
+                Console.Write("INGRESE EL VALOR EN BASE B: ")
+                bp = Console.ReadLine()
+
+                If (instacia.ejercicio7(bp) <> "0") Then
+                    Console.WriteLine("")
+                    s = instacia.ejercicio7(bp)
+                    Console.WriteLine("RESULTADO: -> " + s)
+                Else
+                    Console.ForegroundColor = ConsoleColor.White
+                    Console.WriteLine("---------------------------------------------------")
+                    Console.ForegroundColor = ConsoleColor.Magenta
+                    Console.WriteLine("")
+                    Console.Write("El Numero ingresado tiene que ser mayor o igual a la Base y la Base mayor igual a 2 y menor igual 9")
+                    Console.WriteLine("")
+                End If
             Case "8"
                 Console.WriteLine("acceso 8")
+                Console.Write("INGRESE EL VALOR N: ")
+                n = Console.ReadLine()
+                instacia.cargar(n)
+                Console.Write("INGRESE EL VALOR ND: ")
+                nd = CInt(Console.ReadLine())
+                s = instacia.ejercicio8(nd)
+                Console.WriteLine("")
+                Console.WriteLine("RESULTADO: -> " + s)
             Case "9"
                 Console.WriteLine("acceso 9")
+                Console.Write("INGRESE EL VALOR N: ")
+                n = Console.ReadLine()
+                instacia.cargar(n)
+                Console.Write("INGRESE EL VALOR ND: ")
+                nd = CInt(Console.ReadLine())
+                entero = instacia.ejercicio9(nd)
+                Console.WriteLine("")
+                Console.WriteLine("RESULTADO: -> " + CStr(entero))
             Case "10"
                 Console.WriteLine("acceso 10")
+                Console.Write("INGRESE EL VALOR N: ")
+                n = Console.ReadLine()
+                instacia.cargar(n)
+                Console.Write("INGRESE EL VALOR ND: ")
+                nd = CInt(Console.ReadLine())
+                Console.Write("INGRESE EL VALOR DIG: ")
+                dig = CInt(Console.ReadLine())
+                entero = instacia.ejercicio10(nd, dig)
+                Console.WriteLine("")
+                Console.WriteLine("RESULTADO: -> " + CStr(entero))
             Case Else
                 Console.WriteLine("POR FAVOR ELIJA LA OPCION CORRECTA!!")
-
         End Select
+        Console.ForegroundColor = ConsoleColor.Magenta
+        Console.WriteLine("")
+        Console.Write("PRESIONE ENTER DOS VECES PARA SALIR..!")
         Console.ReadLine()
     End Sub
 
