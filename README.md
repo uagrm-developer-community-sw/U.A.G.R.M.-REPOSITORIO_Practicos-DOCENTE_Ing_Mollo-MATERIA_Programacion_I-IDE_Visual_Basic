@@ -8,6 +8,12 @@ U.A.G.R.M. | Materia: Programacion I | Docente: Albero Mollo | Repositorio: Prac
 Docente Ing. Mollo
 14/04/2020
 
+# Imagen - Template
+![repository-open-graph-template](https://user-images.githubusercontent.com/36086876/87741318-36758900-c7b2-11ea-9265-839085252aef.png)
+
+# Imagen - Formulario Consola
+![principal](https://user-images.githubusercontent.com/36086876/87741212-f0b8c080-c7b1-11ea-858b-ddfacc859841.png)
+
 # Realizar operaciones para la clase Numero Entero:
 1. Verificar si un NE pertenece a la serie de Fibonacci.
 Ejemplo: N=13 => true o N=15=> false Fibonacci: 0,1,1,2,3,5,8,13,21,34,…
