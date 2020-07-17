@@ -9,7 +9,8 @@ Docente Ing. Mollo
 14/04/2020
 
 # Imagen - Template
-![repository-open-graph-template](https://user-images.githubusercontent.com/36086876/87741318-36758900-c7b2-11ea-9265-839085252aef.png)
+![repository-open-graph-template UAGRM](https://user-images.githubusercontent.com/36086876/87741555-cca9af00-c7b2-11ea-9f7c-09e909aeef47.png)
+
 
 # Imagen - Formulario Consola
 ![principal](https://user-images.githubusercontent.com/36086876/87741212-f0b8c080-c7b1-11ea-858b-ddfacc859841.png)
